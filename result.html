@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результат</title>
+</head>
+<body>
+    <h1>Результат решения квадратного уравнения</h1>
+    {% if roots %}
+        <p>{{ roots }}</p>
+    {% elif error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    <a href="/">Вернуться к форме</a>
+</body>
+</html>
